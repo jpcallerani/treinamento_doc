@@ -1,0 +1,51 @@
+-----------------------------------------------------
+-- FAZER O DESENVOLVIMENTO
+-----------------------------------------------------
+// faz clone do repositório;
+git clone https://gitlab.com/benfatto/becomex.git
+
+// cria branch do seu chamado;
+git checkout -b NOME_BRANCH
+
+// adicionar arquivos alterados;
+git add .
+
+// commita alterações;
+git commit -m "NOME_BRANCH - TITULO DO CHAMADO NO JIRA"
+
+// fazer o push das alterações;
+git push origin NOME_BRANCH
+
+-----------------------------------------------------
+-- FAZER O MERGE DO CHAMADO
+-----------------------------------------------------
+// fazer checkout para master;
+git checkout master
+
+// realizar o merge do branch;
+git merge NOME_BRANCH
+
+// finalizar;
+git push origin master
+
+// deletar a branch local;
+git branch -d NOME_BRANCH
+
+// delete branch remotely;
+git push origin --delete NOME_BRANCH
+
+-----------------------------------------------------
+-- INFOS ADICIONAIS
+----------------------------------------------------
+// delete branch locally;
+git branch -d NOME_BRANCH
+
+// delete branch remotely;
+git push origin --delete NOME_BRANCH
+----------------------------------------------------
+Use these 3 simple commands
+Step 1 : git checkout <branch_name>
+
+Step 2 : git pull -s recursive -X theirs
+
+Step 3 : git reset --hard origin/<branch_name>
